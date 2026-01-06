@@ -116,7 +116,7 @@ export default function App() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          src="src/assets/LogoCortada.PNG" 
+          src="public/LogoCortada.png" 
           alt="Logo" 
           title='Renan Belchior' 
         />
@@ -176,7 +176,7 @@ export default function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img src="src/assets/Renan.png" alt="profile-photo" />
+            <img src="public/Renan.png" alt="profile-photo" />
           </motion.div>
           
           <motion.p 
