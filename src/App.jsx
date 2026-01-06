@@ -40,7 +40,7 @@ export default function App() {
 
           <p style={{ 'fontSize': 27 }}>
             <i>
-              "The most dangerous phrase in the language is, 'We've always done it this way'."  <b>- Grace Hopper</b>
+              "The most dangerous phrase in the language is, 'We've always done it this way'." <br /> <b>- Grace Hopper</b>
             </i>
           </p>
 
