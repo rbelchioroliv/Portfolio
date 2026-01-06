@@ -28,9 +28,12 @@ export default function App() {
 
         <div className='about-photo'>
 
-          <img src="src/assets/LogoRoxo.PNg" alt="profile-photo" srcset="" />
+          <div className='border-photo'>
+            <img src="src/assets/Renan.png" alt="profile-photo" srcset="" />
+          </div>
 
-          <p style={{'fontSize': 27}}>
+
+          <p style={{ 'fontSize': 27 }}>
             <i>
               "Frase motivacional"
             </i>
