@@ -18,11 +18,16 @@ export default function App() {
         <div className='about-text'>
           <h1>Sobre</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
-            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
-            have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            Sou Renan Belchior, um desenvolvedor apaixonado por Front-End e Tecnologia da Informação, 
+            focado em criar soluções tecnológicas que impulsionam a inovação. Atualmente conclui o curso de 
+            <b> Análise e Desenvolvimento de Sistemas</b> na <b>FATEC</b> de Botucatu, possuo experiência prática 
+            como Full Stack, dominando tecnologias essenciais como <b>React</b>, <b>JavaScript</b>, <b>HTML</b>, 
+            <b> CSS</b>, <b>TypeScript</b> e ferramentas de 
+            gerenciamento de infraestrutura. Um grande marco na minha trajetória recente foi a conquista mundial do 
+            primeiro lugar no <b>NASA Space Apps Challenge 2025</b>, onde atuei no desenvolvimento de sistemas seguros. 
+            Além disso, minha bagagem inclui formação intensiva na <b>Compass.UOL</b> e vivência real em suporte técnico na <b>OSS Pirangi</b>. 
+            Com inglês avançado e visão estratégica, transformo desafios complexos em interfaces digitais eficientes, 
+            sempre buscando evoluir tecnicamente e colaborar para o sucesso de produtos impactantes no mercado atual.
           </p>
         </div>
 
@@ -35,7 +40,7 @@ export default function App() {
 
           <p style={{ 'fontSize': 27 }}>
             <i>
-              "Frase motivacional"
+              "The most dangerous phrase in the language is, 'We've always done it this way'."  <b>- Grace Hopper</b>
             </i>
           </p>
 
