@@ -104,3 +104,54 @@
 .border-photo:hover img {
   box-shadow: 0 0 39px blueviolet;
 }
+
+
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html {
+  overscroll-behavior: none; 
+}
+
+
+/* --- Botão de Download --- */
+.btn-download {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  color: #fff; 
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+}
+
+
+
