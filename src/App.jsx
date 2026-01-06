@@ -3,6 +3,10 @@ import { motion, useScroll, useTransform } from 'motion/react'
 import Lenis from 'lenis'
 import './App.css'
 
+
+
+
+
 export default function App() {
   
  
