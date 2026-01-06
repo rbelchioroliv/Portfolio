@@ -186,6 +186,36 @@ export default function App() {
       </div>
 
 
+       {/* COMPETÊNCIAS */}
+      <div className='skills-section'>
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          Tech Stack
+        </motion.h2>
+        <div className='skills-grid'>
+          {skills.map((skill, index) => (
+            <motion.div 
+              key={index}
+              className='skill-card'
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0 }}
+              whileHover={{ scale: 1.1, backgroundColor: "#661cab", borderColor: "#fff" }}
+            >
+              {skill}
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+
+
+      
+
 
      
     </>
