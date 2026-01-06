@@ -2,12 +2,13 @@
   max-width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 10%;
+  /* padding-top: 10%; */
   text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  overflow-x: hidden; /* Previne rolagem horizontal indesejada */
 }
 
 body {
@@ -18,43 +19,48 @@ body {
 
 
 .header {
-  width: 100vh;
+  width: 100%; /* Ajustado de 100vh para 100% para não vazar a tela */
   height: 100vh;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header img {
   width: 100%;
   height: 50%;
+  object-fit: contain; /* Garante que a imagem não distorça */
+  max-width: 800px; /* Limite para telas muito grandes */
 }
 
 .about {
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh; /* Mudado para min-height para evitar cortes em telas pequenas */
+  
   display: inline-flex;
-  flex-direction: line;
+  flex-direction: row; /* Corrigido de 'line' para 'row' */
   justify-content: center;
   gap: 15%;
   align-items: center;
   text-align: justify;
-  /* background-color: aqua; */
+  padding: 2rem; /* Adicionado padding para não colar nas bordas */
+  box-sizing: border-box;
 }
 
 .about-text {
   width: 65vh;
-
-
+  max-width: 600px; /* Limite seguro para desktop */
   font-size: 20px;
-
 }
 
 
 .about-photo {
   width: 30vh;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about-photo img {
@@ -73,7 +79,6 @@ body {
   width: 33vh;
   height: 33vh;
   
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +106,6 @@ body {
 .border-photo:hover::before {
   transform: scale(1.1); 
   
- 
   border-color: rgb(102, 28, 171);
   box-shadow: 0 0 39px rgb(102, 28, 171);
 }
@@ -166,6 +170,8 @@ html {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skills-section h2, .timeline-section h2 {
@@ -199,6 +205,8 @@ html {
   padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .timeline-container {
@@ -210,7 +218,7 @@ html {
 
 
 
-/* Linha vertical central*/
+/* Linha vertical central */
 .timeline-container::before {
   content: '';
   position: absolute;
@@ -273,6 +281,8 @@ html {
   padding: 4rem 2rem;
   max-width: 1200px; 
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .projects-section h2 {
@@ -284,7 +294,8 @@ html {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Ajuste no minmax para caber melhor em telas pequenas */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -375,6 +386,7 @@ html {
   background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradiente sutil */
   text-align: center;
   margin-top: 2rem;
+  box-sizing: border-box;
 }
 
 .contact-footer h2 {
@@ -436,3 +448,87 @@ html {
   margin-top: 2rem;
 }
 
+
+/* ========================================= */
+/* MEDIA QUERIES (RESPONSIVIDADE)      */
+/* ========================================= */
+
+@media (max-width: 1024px) {
+  /* Ajustes Gerais para Tablets e Celulares */
+  #root {
+    padding-top: 5rem;
+  }
+
+  .header {
+    height: auto;
+    min-height: 80vh;
+    padding: 2rem 0;
+  }
+
+  /* Seção Sobre - Empilhar verticalmente */
+  .about {
+    flex-direction: column; /* Texto em cima, foto embaixo */
+    height: auto;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    text-align: center; /* Centraliza o texto no mobile */
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Ajustar foto para tamanho fixo razoável em vez de vh */
+  .about-photo {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .about-photo img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .border-photo {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* Timeline - Ajuste para a linha à esquerda (mobile default) */
+  /* Precisamos dar margem para o texto não ficar em cima da linha */
+  .timeline-item {
+    margin-left: 2.5rem; 
+  }
+  
+  /* Ajuste no título principal */
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes finos para celulares pequenos */
+  .skills-grid {
+    gap: 0.8rem;
+  }
+  
+  .skill-card {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .about-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .border-photo {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .header img {
+    max-width: 90%;
+  }
+}
