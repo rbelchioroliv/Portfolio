@@ -72,6 +72,13 @@ export default function App() {
   ];
   const projects = [
     {
+      title: "Portfólio",
+      desc: "Meu portifólio de apresentação",
+      techs: ["React", "JavaScriptS", "HTML/CSS", "Acessibilidade"],
+      link: "https://github.com/rbelchioroliv/Portifolio",
+      type: "Portifólio"
+    },
+    {
       title: "Singularidade (NASA Winner)",
       desc: "Ferramenta 3D inclusiva para criação de habitats espaciais. Vencedor regional do NASA Space Apps 2025.",
       techs: ["Three.js", "JS", "HTML/CSS", "Acessibilidade"],
@@ -96,7 +103,7 @@ export default function App() {
       title: "Cartão Digital NFC",
       desc: "Solução inovadora para cartões de visita utilizando tecnologia NFC e Web.",
       techs: ["IoT", "HTML", "CSS", "Mobile"],
-      link: "#",
+      link: "https://github.com/rbelchioroliv/Cartoes-de-Visita",
       type: "Front-End"
     }
   ];
