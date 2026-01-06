@@ -10,6 +10,12 @@
   flex-direction: column
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
 
 .header {
   width: 100vh;
@@ -364,6 +370,7 @@ html {
 
 /* --- Footer e Contato --- */
 .contact-footer {
+  width: 100%;
   padding: 4rem 2rem 2rem;
   background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradiente sutil */
   text-align: center;
