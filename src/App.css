@@ -437,6 +437,20 @@ html {
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
+.social-btn.email:hover {
+  background-color: #EA4335; 
+  border-color: #EA4335;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(234, 67, 53, 0.4);
+}
+
+.social-btn.whatsapp:hover {
+  background-color: #25D366;
+  border-color: #25D366;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
 .social-btn svg {
   width: 20px;
   height: 20px;
