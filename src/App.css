@@ -8,7 +8,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden; /* Previne rolagem horizontal indesejada */
+  overflow-x: hidden; 
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 
 .header {
-  width: 100%; /* Ajustado de 100vh para 100% para não vazar a tela */
+  width: 100%; 
   height: 100vh;
   display: flex;
   align-items: center;
@@ -29,27 +29,27 @@ body {
 .header img {
   width: 100%;
   height: 50%;
-  object-fit: contain; /* Garante que a imagem não distorça */
-  max-width: 800px; /* Limite para telas muito grandes */
+  object-fit: contain; 
+  max-width: 800px; 
 }
 
 .about {
   width: 100%;
-  min-height: 100vh; /* Mudado para min-height para evitar cortes em telas pequenas */
+  min-height: 100vh; 
   
   display: inline-flex;
-  flex-direction: row; /* Corrigido de 'line' para 'row' */
+  flex-direction: row; 
   justify-content: center;
   gap: 15%;
   align-items: center;
   text-align: justify;
-  padding: 2rem; /* Adicionado padding para não colar nas bordas */
+  padding: 2rem; 
   box-sizing: border-box;
 }
 
 .about-text {
   width: 65vh;
-  max-width: 600px; /* Limite seguro para desktop */
+  max-width: 600px;
   font-size: 20px;
 }
 
@@ -294,7 +294,7 @@ html {
 
 .projects-grid {
   display: grid;
-  /* Ajuste no minmax para caber melhor em telas pequenas */
+
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
@@ -383,7 +383,7 @@ html {
 .contact-footer {
   width: 100%;
   padding: 4rem 2rem 2rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); /* Gradiente sutil */
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); 
   text-align: center;
   margin-top: 2rem;
   box-sizing: border-box;
@@ -449,12 +449,10 @@ html {
 }
 
 
-/* ========================================= */
-/* MEDIA QUERIES (RESPONSIVIDADE)      */
-/* ========================================= */
+
 
 @media (max-width: 1024px) {
-  /* Ajustes Gerais para Tablets e Celulares */
+  
   #root {
     padding-top: 5rem;
   }
@@ -465,13 +463,13 @@ html {
     padding: 2rem 0;
   }
 
-  /* Seção Sobre - Empilhar verticalmente */
+  
   .about {
-    flex-direction: column; /* Texto em cima, foto embaixo */
+    flex-direction: column; 
     height: auto;
     gap: 3rem;
     padding: 2rem 1rem;
-    text-align: center; /* Centraliza o texto no mobile */
+    text-align: center;
   }
 
   .about-text {
@@ -479,7 +477,7 @@ html {
     max-width: 100%;
   }
 
-  /* Ajustar foto para tamanho fixo razoável em vez de vh */
+ 
   .about-photo {
     width: 100%;
     margin-top: 1rem;
@@ -495,20 +493,19 @@ html {
     height: 270px;
   }
 
-  /* Timeline - Ajuste para a linha à esquerda (mobile default) */
-  /* Precisamos dar margem para o texto não ficar em cima da linha */
+ 
   .timeline-item {
     margin-left: 2.5rem; 
   }
   
-  /* Ajuste no título principal */
+
   .about-text h1 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  /* Ajustes finos para celulares pequenos */
+ 
   .skills-grid {
     gap: 0.8rem;
   }
