@@ -174,8 +174,8 @@ export default function App() {
           </motion.p>
 
           <motion.a
-            href="/CV-Renan_Belchior.pdf"
-            download="CV-Renan_Belchior.pdf"
+            href="/CV_Renan_Belchior.pdf"
+            download="CV_Renan_Belchior.pdf"
             className="btn-download"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
