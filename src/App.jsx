@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'motion/react'
+import { Analytics } from "@vercel/analytics/next"
 import Lenis from 'lenis'
 import './App.css'
 
@@ -136,6 +137,9 @@ export default function App() {
 
   return (
     <>
+
+      <Analytics />
+
       {/* HEADER */}
       <div className='header'>
         <motion.img
