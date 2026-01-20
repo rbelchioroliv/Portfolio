@@ -9,16 +9,16 @@ import './App.css'
 
 export default function App() {
 
-  
+
   const [emailCopied, setEmailCopied] = useState(false);
 
   const handleCopyEmail = (e) => {
-    e.preventDefault(); 
-    navigator.clipboard.writeText("renanbelchior1@gmail.com"); 
+    e.preventDefault();
+    navigator.clipboard.writeText("renanbelchior1@gmail.com");
 
-    setEmailCopied(true); 
+    setEmailCopied(true);
 
-    
+
     setTimeout(() => {
       setEmailCopied(false);
     }, 2000);
@@ -124,6 +124,13 @@ export default function App() {
       techs: ["IoT", "HTML", "CSS", "Mobile"],
       link: "https://github.com/rbelchioroliv/Cartoes-de-Visita",
       type: "Front-End"
+    },
+    {
+      title: "App Igreja - IPB Calvário App",
+      desc: "App feito para interação de membros com informativos e biblia e hinario digitais",
+      techs: ["React Native", "TypeScript", "CSS", "Mobile", "Firebase"],
+      link: "https://github.com/rbelchioroliv/IPB-Calvario",
+      type: "Full Stack"
     }
   ];
 
